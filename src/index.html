@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Calculator</title>
+  <link href="https://fonts.googleapis.com/css?family=Exo+2&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../dist/output.css" />
+  <script src="../dist/index.js" defer></script>
+</head>
+
+<body>
+  <div id="container" class="h-full w-full">
+    <div id="app" class="h-full w-full border-2 border-cs-darkgray bg-cs-lightgray">
+      <header id="screen"
+        class="p-1 grid gap-4 grid-rows-[1fr 2fr] justify-items-end m-4 bg-cs-blue border-8 rounded border-cs-darkgray">
+        <p id="top" class="text-3xl m-1 mr-2">top</p>
+        <p id="botom" class="text-4xl m-1 mr-2">BOTTOM</p>
+      </header>
+      <main class="calc__pad grid h-4/5 m-4 grid-cols-4 grid-rows-5 gap-1">
+        <button class="btn clear col-span-2">AC</button>
+        <button class="btn delete">DEL</button>
+        <button class="btn multiply">*</button>
+        <button class="btn one">1</button>
+        <button class="btn two bg-cs-lightblack text-white">2</button>
+        <button class="btn three bg-cs-red rounded-3xl text-white">3</button>
+        <button class="btn divide bg-cs-red rounded-3xl text-white">/</button>
+        <button class="btn four bg-cs-lightblack text-white">4</button>
+        <button class="btn five bg-cs-lightblack text-white">5</button>
+        <button class="btn six bg-cs-lightblack text-white">6</button>
+        <button class="btn add">+</button>
+        <button class="btn seven">7</button>
+        <button class="btn eight bg-cs-lightblack text-white">8</button>
+        <button class="btn nine rounded-3xl bg-cs-purple text-white">
+          9
+        </button>
+        <button class="btn subtract rounded-3xl bg-cs-purple text-white">
+          -
+        </button>
+        <button class="btn dot bg-cs-darkgray text-white">.</button>
+        <button class="btn zero">0</button>
+        <button class="btn col-span-2 equals bg-cs-darkgray text-white">
+          =
+        </button>
+      </main>
+    </div>
+  </div>
+</body>
+
+</html>
